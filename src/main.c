@@ -812,6 +812,9 @@ static void setup_sigbus_handler(void)
 
 gint main(gint argc, gchar *argv[])
 {
+	printf("test: Building from fork!");
+	fflush(stdout);
+	exit(0);
 	CollectionData *first_collection = NULL;
 	gchar *buf;
 	CollectionData *cd = NULL;
